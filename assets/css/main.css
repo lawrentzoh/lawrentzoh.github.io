@@ -53,6 +53,13 @@ table {
 	border-spacing: 0;
 }
 
+#propic {
+	border: 1px solid;
+	border-radius: 5%;
+	border-color: (255, 255, 255, 0.15) !important;
+	max-height: 200px;
+}
+
 body {
 	-webkit-text-size-adjust: none;
 }
@@ -1997,7 +2004,7 @@ input, select, textarea {
 	}
 
 		.features section {
-			padding: 3.5em 3em 1em 7em ;
+			padding: 3.5em 3em 3em 3.5em ;
 			width: 50%;
 			border-top: solid 1px rgba(255, 255, 255, 0.15);
 			position: relative;
@@ -2199,7 +2206,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.features section {
-				padding: 2.5em 1.5em 0.1em 5.5em ;
+				padding: 2.5em 2em 2em 2.5em ;
 			}
 
 				.features section .icon {
@@ -2616,6 +2623,10 @@ input, select, textarea {
 				width: 100%;
 			}
 
+	#aib {
+		opacity: 0.5;
+	}
+
 /* List */
 
 	ol {
@@ -2907,12 +2918,13 @@ input, select, textarea {
 		.split > * {
 			width: calc(50% - 2.5em);
 		}
-
+		
+		/*
 		.split > :nth-child(2n - 1) {
 			padding-right: 2.5em;
 			border-right: solid 1px rgba(255, 255, 255, 0.15);
 		}
-
+		*/
 		.split > :nth-child(2n) {
 			padding-left: 2.5em;
 		}
@@ -3905,12 +3917,22 @@ input, select, textarea {
 					font-size: 1em;
 				}
 
+				/*centra img profilo in mobile*/
+				#propic{
+					display:block;margin:0 auto;
+					margin-bottom: 10%;
+				}
+
 			}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (min-width: 1080px) {
 
 			#intro {
 				background-attachment: scroll;
+			}
+			#propic{
+				background-attachment: scroll;
+				margin-bottom: 5%;
 			}
 
 		}
