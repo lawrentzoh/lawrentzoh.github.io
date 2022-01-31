@@ -3900,6 +3900,7 @@ input, select, textarea {
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
+		
 	}
 
 		#intro p {
@@ -3911,13 +3912,32 @@ input, select, textarea {
 				#intro p br {
 					display: none;
 				}
+				#intro h1 
+				{
+					text-align: center;
+				}
+				#intro p {
+					font-size: 1em;
+					text-align: center;
+				}
 
+
+				/*centra img profilo in mobile*/
+				#propic{
+					display:block;margin:0 auto;
+					margin-bottom: 10%;
+				}
 			}
 
 			@media screen and (max-width: 736px) {
 
+				#intro h1 
+				{
+					text-align: center;
+				}
 				#intro p {
 					font-size: 1em;
+					text-align: center;
 				}
 
 				/*centra img profilo in mobile*/
